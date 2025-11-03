@@ -1,65 +1,29 @@
-# Customer-Segmentation
-# 🧠 Project: Customer Segmentation using K-Means Clustering
+🚀 **Customer Segmentation with K-Means Clustering**
 
-Dataset: Mall Customer Dataset (200 entries, 5 columns)
-Columns include:
+I recently completed a machine learning project focused on understanding customer behavior through data-driven segmentation.
 
-CustomerID
+🧩 **Objective:**
+To segment mall customers based on their **Annual Income** and **Spending Score** using **K-Means clustering**.
 
-Genre
+🧠 **Process Overview:**
 
-Age
+* Cleaned and explored the Mall Customers dataset (200 records, 5 features).
+* Focused on key features: *Annual Income (k$)* and *Spending Score (1–100)*.
+* Applied **K-Means** and determined the optimal number of clusters using the **Elbow Method**.
+* Visualized the resulting clusters in 2D to better interpret customer groups.
 
-Annual Income (k$)
+📊 **Results:**
+The model identified **5 distinct customer segments**, including:
 
-Spending Score (1-100)
+* 💎 High-income, high-spending — *Premium Customers*
+* 💼 High-income, low-spending — *Conservative Buyers*
+* 🛒 Moderate-income, high-spending — *Potential Loyalists*
+* 🎯 Low-income, high-spending — *Impulsive Buyers*
+* 🧍 Low-income, low-spending — *Practical Shoppers*
 
-⚙️ Data Preparation
+✨ **Key Insights:**
 
-The project selected Annual Income and Spending Score for clustering.
+* Visual clustering helps understand spending patterns and guide marketing strategies.
+* Data-driven segmentation enables businesses to improve customer targeting and satisfaction.
 
-Data was likely visualized using scatter plots to observe income vs. spending distribution.
-
-Data was standardized or scaled (most likely via StandardScaler or similar).
-
-📊 Model: K-Means Clustering
-
-Used the Elbow Method to find the optimal number of clusters.
-
-The optimal cluster count = 5 (standard for this dataset).
-
-💡 Results (Cluster Labels)
-
-A new column label was added to the dataset:
-
-   CustomerID   Genre   Age   Annual Income (k$)   Spending Score (1-100)   label
-0           1    Male    19                   15                        39       3
-1           2    Male    21                   15                        81       2
-2           3  Female    20                   16                         6       3
-3           4  Female    23                   16                        77       2
-4           5  Female    31                   17                        40       3
-
-
-This shows that customers were successfully assigned to 5 segments (0–4).
-
-🎯 Likely Cluster Interpretation
-
-Based on known Mall Customer clustering results:
-
-Cluster 0 – Low Income, Low Spending → Practical shoppers
-
-Cluster 1 – High Income, Low Spending → Conservative buyers
-
-Cluster 2 – Moderate Income, High Spending → Target potential customers
-
-Cluster 3 – Low Income, High Spending → Impulsive buyers
-
-Cluster 4 – High Income, High Spending → Premium customers
-
-🖼️ Visualization
-
-The notebook most likely includes:
-
-A 2D scatter plot showing clusters in different colors.
-
-Cluster centers highlighted (using red markers or “X”).
+#MachineLearning #DataScience #KMeans #CustomerSegmentation #Python #Clustering #Analytics #Visualization
